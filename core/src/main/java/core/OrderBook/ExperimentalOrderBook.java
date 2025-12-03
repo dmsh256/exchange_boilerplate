@@ -1,12 +1,10 @@
 package core.OrderBook;
 
-import core.Order.Order;
-
 public interface ExperimentalOrderBook {
 
-    void placeBuyLimit(Order order);
-    void placeSellLimit(Order order);
+    void placeBuyLimit(double price, long quantity);
+    void placeSellLimit(double price, long quantity);
 
-    void placeBuyMarket(Order order);
-    void placeSellMarket(Order order);
+    void placeBuyMarket(long quantity);
+    void placeSellMarket(long quantity);
 }

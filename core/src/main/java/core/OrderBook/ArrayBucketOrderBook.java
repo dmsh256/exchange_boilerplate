@@ -20,7 +20,7 @@ import java.util.function.Consumer;
  * <p>
  * Note: Limits must be unique objects stored in the book. Market orders should be pooled.
  */
-public final class ArrayBucketOrderBook implements ExperimentalOrderBook {
+public final class ArrayBucketOrderBook implements OrderBook {
 
     private static final class Level {
         Order head;

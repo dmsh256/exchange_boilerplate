@@ -4,7 +4,7 @@ import core.Order.Order;
 
 import java.util.*;
 
-public class TreeMapOrderBook implements ExperimentalOrderBook {
+public class TreeMapOrderBook implements OrderBook {
     public final NavigableMap<Double, Deque<Order>> bids = new TreeMap<>(Comparator.reverseOrder());
     public final NavigableMap<Double, Deque<Order>> asks = new TreeMap<>();
 

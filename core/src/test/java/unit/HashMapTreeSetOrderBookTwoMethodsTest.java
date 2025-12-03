@@ -1,4 +1,4 @@
-package functional;
+package unit;
 
 import core.OrderBook.HashMapTreeSetOrderBookTwoMethods;
 import org.junit.jupiter.api.Test;
@@ -114,8 +114,5 @@ public class HashMapTreeSetOrderBookTwoMethodsTest {
         book.placeBuyLimit(100.0, 1);
         book.placeSellLimit(101.0, 1);
         book.placeBuyLimit(99.0, 1);
-
-        // We can't access IDs directly, but assume id++ is thread-safe enough for single-threaded book
-        // In production you’d use AtomicLong
     }
 }

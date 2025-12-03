@@ -1,4 +1,4 @@
-package functional;
+package unit;
 
 import core.Order.Order;
 import core.Order.OrderType;
@@ -70,10 +70,5 @@ public class TreeMapOrderBookTest {
         book.placeBuyLimit(new Order(1, OrderType.BUY_LIMIT, 100.0, 1, false));
         book.placeSellLimit(new Order(1, OrderType.SELL_LIMIT, 101.0, 1, false));
         book.placeBuyLimit(new Order(1, OrderType.BUY_LIMIT, 99.0, 1, false));
-
-        // We can't access IDs directly, but assume id++ is thread-safe enough for single-threaded book
-        // In production you’d use AtomicLong
     }
-
-    // TODO add int -> double tests
 }

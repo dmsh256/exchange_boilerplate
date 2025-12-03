@@ -8,7 +8,7 @@ import java.util.*;
 /**
  * Experimental
  */
-public final class HashMapTreeSetOrderBookTwoMethods implements OrderBook {
+public final class HashMapTreeSetOrderBookTwoMethods implements ExperimentalOrderBook {
 
     private long id = 1;
 
